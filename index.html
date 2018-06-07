@@ -1,14 +1,13 @@
 
 
 <!--
-@created:           02/08/2017
-@today:             02/08/2017
-@project:           POC Google Tag Manager
+@created:           06/07/2018
+@today:             06/07/2018
+@project:           One Trust POC
 			
 @author:            Ankur Mahajan
 			
-@version:           $Revision:$
-http://localhost:8080/GTM_POC/warnerbros.html
+@version:           $Revision:$1
 -->
 			
 			
@@ -20,7 +19,13 @@ http://localhost:8080/GTM_POC/warnerbros.html
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Warner Bros Consent Manager</title>
- 
+<!-- OneTrust Cookies Consent Notice (Production CDN, ankurmahajan.github.io, en-GB) start -->
+<script src="https://cdn.cookielaw.org/consent/0c7e15fd-5318-416d-9e4c-b0b16c1a0af6.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice (Production CDN, ankurmahajan.github.io, en-GB) end -->
+	
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -69,8 +74,17 @@ body {
   </head>
   <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57LFVZF"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BV77LZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- OneTrust Cookies Policy start -->
+
+<div id="optanon-cookie-policy"></div>
+
+<!-- OneTrust Cookies Policy end -->
+  <!-- Google Tag Manager (noscript) -->
+<!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57LFVZF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
 <!-- End Google Tag Manager (noscript) -->
 
 <div id="consent_blackbar"></div>
@@ -118,7 +132,11 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
 <p>Click on the <b>Cookie Preferences</b> link below.</p>
 <br>
 
-<footer id ="wb_consent" >
+<!--<footer id ="wb_consent" >-->
+<footer>
+<!-- OneTrust Cookies Settings button start -->
+<a class="optanon-show-settings">Cookie Settings</a>
+<!-- OneTrust Cookies Settings button end -->
 <!-- <div id="teconsent" style="display: none;"></div>          
   <div id="footerCookie" style="display: none;"></div> --> 
   <!-- Commented for GTM        <script src=//consent.truste.com/notice?domain=warnerbros.com&c=teconsent&country=gb&js=bb&noticeType=bb></script>  -->
