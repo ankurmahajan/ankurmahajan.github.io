@@ -120,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li>The Global Websites which have EU customers will get impacted and on those websites, no non-essential cookies or trackers shall be dropped onto the user's browser until consent has been given by the user to do so</li>
 	</ul>
 <script>
-window.onclick = function() {
+document.addEventListener("click",function() {
     var check = dataLayer[3].OptanonActiveGroups;
 	alert(check);
 	var pattern = new RegExp(",3,");
@@ -132,7 +132,7 @@ window.onclick = function() {
     document.body.appendChild(iframe);
         
     }
-}
+});
 </script>	
 	
 <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
