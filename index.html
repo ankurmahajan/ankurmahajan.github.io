@@ -121,7 +121,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</ul>
 <script>
 window.onload = function() {
-    var check = document.getElementById("OptanonActiveGroups").value;
+    var check = dataLayer[3].OptanonActiveGroups;
+	alert(check);
 	var pattern = "/,3,/,";
     console.log(pattern.test(check));
     if (pattern.test(check) == 'true') {
