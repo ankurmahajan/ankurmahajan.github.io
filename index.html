@@ -125,13 +125,17 @@ window.onload = function() {
 	var pattern = "/,3,/,";
     console.log(pattern.test(check));
     if (pattern.test(check) == 'true') {
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
+	var iframe = document.createElement('iframe');
+    iframe.style.display = "none";
+    iframe.src = "https://www.youtube.com/embed/tgbNymZ7vqY";
+    document.body.appendChild(iframe);
+        
     }
 }
 </script>	
 	
-
+<!--<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>-->
 	
 
 <hr>
