@@ -120,11 +120,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li>The Global Websites which have EU customers will get impacted and on those websites, no non-essential cookies or trackers shall be dropped onto the user's browser until consent has been given by the user to do so</li>
 	</ul>
 <script>
-window.onload = function() {
+window.onclick = function() {
     var check = dataLayer[3].OptanonActiveGroups;
 	alert(check);
 	var pattern = new RegExp(",3,");
-	//var pattern = /,3,/,
     console.log(pattern.test(check));
     if (pattern.test(check) == 'true') {
 	var iframe = document.createElement('iframe');
