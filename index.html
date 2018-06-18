@@ -123,7 +123,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 window.onload = function() {
     var check = dataLayer[3].OptanonActiveGroups;
 	alert(check);
-	var pattern = /,3,/,
+	var pattern = new RegExp(",3,");
+	//var pattern = /,3,/,
     console.log(pattern.test(check));
     if (pattern.test(check) == 'true') {
 	var iframe = document.createElement('iframe');
